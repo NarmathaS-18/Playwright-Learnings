@@ -1,14 +1,11 @@
 const num = 17;
+
 let found = false;
 
 if (num < 2) {
-    found = true;
-} else if (num === 2) {
-    found = false; 
-} else if (num % 2 === 0) {
-    found = true;
+    found = true;   // 0, 1, and negative numbers are not prime
 } else {
-    for (let i = 3; i * i <= num; i += 2) {
+    for (let i = 2; i < num; i++) {
         if (num % i === 0) {
             found = true;
             break;
