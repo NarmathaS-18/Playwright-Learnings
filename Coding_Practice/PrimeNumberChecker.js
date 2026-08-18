@@ -3,7 +3,7 @@ const num = 17;
 let found = false;
 
 if (num < 2) {
-    found = true;   // 0, 1, and negative numbers are not prime
+    found = true;   
 } else {
     for (let i = 2; i < num; i++) {
         if (num % i === 0) {
