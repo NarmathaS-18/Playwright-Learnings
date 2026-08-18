@@ -2,11 +2,11 @@ const num = 17;
 let found = false;
 
 if (num < 2) {
-    found = true; // treat 0, 1, negatives as "not prime"
+    found = true;
 } else if (num === 2) {
-    found = false; // 2 is prime
+    found = false; 
 } else if (num % 2 === 0) {
-    found = true; // other even numbers aren't prime
+    found = true;
 } else {
     for (let i = 3; i * i <= num; i += 2) {
         if (num % i === 0) {
